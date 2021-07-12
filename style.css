@@ -36,7 +36,8 @@ body {
     color: black;
 }
 
-.links a:focus {
+.links a:active {
+    color: red;
     text-decoration: underline;
 }
 
@@ -99,5 +100,5 @@ button:active {
 }
 
 .color-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
