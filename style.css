@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ body {
     align-items: center;
     justify-content: space-around;
     font-size: 1.2rem;
-    /* font-family: "Roboto", sans-serif; */
     font-weight: 600;
     background-color: rgb(255, 255, 255);
 }
@@ -28,17 +26,12 @@ body {
 }
 
 .color-flipper {
-    color: hsl(205, 89%, 70%);
+    color: hsl(205, 100%, 49%);
 }
 
 .links a {
     text-decoration: none;
     color: black;
-}
-
-.links a:active {
-    color: red;
-    text-decoration: underline;
 }
 
 .links a:hover {
@@ -101,4 +94,19 @@ button:active {
 
 .color-name {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .heading-container {
+        flex-direction: column;
+    }
+    .links {
+        display: block;
+    }
+    .color-flipper {
+        display: block;
+        background-color: rgb(92, 86, 86);
+        width: 100%;
+        text-align: center;
+    }
 }
